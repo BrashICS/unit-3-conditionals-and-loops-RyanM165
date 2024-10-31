@@ -62,3 +62,39 @@ function user() {
     }
 }
 
+function startGame() {
+    let playerName = prompt("What is your name?");
+    alert(`🎃Welcome, ${playerName}, to Haunted St. Matthew HS!🎃`);
+    
+    let pathChoice = prompt("Do you want to go into the (1) library or (2) basement?");
+    if (pathChoice === '1') {
+        library();
+    } else if (pathChoice === '2') {
+        basement();
+    } else {
+        alert("Invalid choice. Please refresh and try again.");
+    }
+}
+function library() {
+    const libraryChoice = prompt("You see a creepy old book on a dusty bench. Do you (1) open it or (2) leave it alone?");
+    if (libraryChoice === '1') {
+        alert("A ghoul emerges from the book and scares you to death!");
+    } else if (libraryChoice === '2') {
+        alert("You quietly leave the library and find the exit. You survive!");
+    } else {
+        alert("Invalid choice. Please refresh and try again.");
+    }
+    alert("The End. Thanks for playing!");
+}
+
+function basement() {
+    const basementChoice = prompt("You hear strange noises. Do you (1) investigate or (2) run away?");
+    if (basementChoice === '1') {
+        alert("You discover a car trunk filled with candy!");
+    } else if (basementChoice === '2') {
+        alert("👿You trip and fall... The ghost catches you!👿");
+    } else {
+        alert("Invalid choice. Please refresh and try again.");
+    }
+    alert("The End. Thanks for playing!");
+}
