@@ -98,3 +98,18 @@ function basement() {
     }
     alert("The End. Thanks for playing!");
 }
+
+function menu() {
+let message = `Hi! Please make a selection:
+1 - Play
+2 - Options
+3 - DLC
+4 - Check for Updates
+5 - Exit
+`
+// Prompt with the menu
+let selection = Number(prompt(message));}
+if (selection == 1) {
+    alert("Let's Play!")
+    let difficulty = +prompt
+}
