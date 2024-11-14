@@ -130,3 +130,38 @@ if (selection === 1) {
 } else if (selection === 5) {
     alert("Bye!");
 }
+
+let sub = substring("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 6, 11);
+
+let my_string = "strings are powerful!";
+let one_char = 
+my_string[my_string.length - 1];
+console.log(one_char);
+
+function random_until(min, max, stop) {
+    
+    if (max<= min) {
+        return -1;
+    }
+    
+    if (stop < min || stop > max) {
+        return -1;
+    } 
+    let rnd = randInt(min, max);
+
+    while (rnd != stop){
+        console.log(rnd)
+        rnd = randInt(min, max);
+    }}
+
+    function average(n) {
+        let avg= 0;
+        let count = 1;
+    
+        while (count <= n) {
+            avg = avg + Number(prompt('Please enter  value ${count}/${n}'));
+        }
+        avg = round(avg /n, 1);
+        console.log('the average is ${avg}}');
+    }
+    
