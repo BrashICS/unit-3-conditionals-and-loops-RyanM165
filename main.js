@@ -164,4 +164,3 @@ function random_until(min, max, stop) {
         avg = round(avg /n, 1);
         console.log('the average is ${avg}}');
     }
-    
