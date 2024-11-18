@@ -177,6 +177,3 @@ function build_string() {
   
     return output;
 }
-printOdd(7);
-
-printOdd(-7);
