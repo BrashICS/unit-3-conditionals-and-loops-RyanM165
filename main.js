@@ -164,3 +164,19 @@ function random_until(min, max, stop) {
         avg = round(avg /n, 1);
         console.log('the average is ${avg}}');
     }
+
+   // Build a string from user input
+function build_string() {
+    let output = "";
+    let input;
+    do {
+      input = prompt("Enter a string of text or a single 'q' to quit: ");
+      output += input;
+    
+    } while (input.toLowerCase() != "q");
+  
+    return output;
+}
+printOdd(7);
+
+printOdd(-7);
