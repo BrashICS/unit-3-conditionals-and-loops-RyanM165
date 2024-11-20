@@ -131,7 +131,7 @@ if (selection === 1) {
     alert("Bye!");
 }
 
-let sub = substring("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 6, 11);
+
 
 let my_string = "strings are powerful!";
 let one_char = 
@@ -165,15 +165,16 @@ function random_until(min, max, stop) {
         console.log('the average is ${avg}}');
     }
 
-   // Build a string from user input
-function build_string() {
-    let output = "";
-    let input;
-    do {
-      input = prompt("Enter a string of text or a single 'q' to quit: ");
-      output += input;
-    
-    } while (input.toLowerCase() != "q");
   
-    return output;
+
+function test(name, age) {
+if (name == "Mr Squirrel") {
+console.log('Hello! You are ${age} years old')
+  }else if (age == 1) {
+console.log("Happy birthday!")
+  }else if (age == 44 && name == "Matt") {
+    console.log("Hi Mr Brash")
+  }else {
+    console.log("I dont know you...");
+  }
 }
